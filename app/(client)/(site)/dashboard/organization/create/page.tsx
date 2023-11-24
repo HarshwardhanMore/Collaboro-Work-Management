@@ -77,19 +77,19 @@ const page = () => {
                 className=" w-full ml-1 px-2 py-2 text-sm  border-b-2 outline-none ring-0 focus:border-black transition-all mr-2"
               />
             </div>
-            {/* <div className="grid grid-cols-4 items-center gap-4">
-            <label htmlFor="creator_id" className="text-right">
-              creator_id
-            </label>
-            <input
-              id="creator_id"
-              name="creator_id"
-              required
-              value={data.creator_id}
-              onChange={(e) => setData({ ...data, creator_id: e.target.value })}
-              className="col-span-3"
-            />
-          </div> */}
+            <div className=" flex w-full my-4">
+              <BusinessIcon />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Name of Organization"
+                required
+                value={data2.name}
+                onChange={(e) => setData2({ ...data2, name: e.target.value })}
+                className=" w-full ml-1 px-2 py-2 text-sm  border-b-2 outline-none ring-0 focus:border-black transition-all mr-2"
+              />
+            </div>
             <Button
               type="submit"
               variant="default"
